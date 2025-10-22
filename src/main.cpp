@@ -9,6 +9,7 @@
 using namespace std;
 
 /*
+* README---------------------------------------------------
 The goal of this project is to create a game that is a mix of Snake and Troncycles, it must have good use of classes. 
 
 And needs to show of math that can be used to perform basic vector operations such as addition,
@@ -22,10 +23,11 @@ The main planned classes are
 Player, Enemy, Powerups, Math/Vector2D, A game manager, map editor
 The rest of the calculations goes into the main
 
-There are 2 stages to start with, more to be added later? The first stage is just wall boundaries, the second has some obstacles in the center of the screen.
+There are 2 stages to start with, (more to be added later?) 
+The first stage is just wall boundaries, 
+the second has some obstacles in the center of the screen.
 
-There are 3 powerups to start with (one with a twist) more to be added later?
-
+There are 3 powerups to start with (one with a twist) (more to be added later?) 
 Speedup/down, Split tail(Allows collison with tail to cut of the tail), and ghost mode (collison off for a few seconds)
 All powerups are just simple different colored rectangles
 
@@ -38,12 +40,14 @@ the Tail follows the player object
 
 Collison checks on tail, walls, and powerups
 
+First i will make and test the player and the movement and tail, then add the powerups, then the enemies, then the stages, scoring , and finally polish
 
+README END------------------------------------------------
 
 */
 
 //Global variables
-Vector2D Test;
+Vector2D Test = { 1.f, 0.f };
 
 int main()
 {
@@ -55,12 +59,15 @@ int main()
 	float halfScreenHeight = (float)(screenHeight / 2);
 
 	// Player Setup
+	//Needs to change placing based on amount of active players
 	Player player;
 	player.position = { halfScreenWidth, halfScreenHeight };
 
 	//Powerups
+	//After PLAYER
 	
 	// Enemy Setup
+	//AFTER PLAYER!
 
 	//Window setup
 	InitWindow(screenWidth, screenHeight, "Vector Clash");
