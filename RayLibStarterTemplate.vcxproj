@@ -141,15 +141,20 @@
     <None Include="Makefile" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="MapGenerator.cpp" />
     <ClCompile Include="src\Enemy.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\PowerUp.cpp" />
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Bullet.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="MapGenerator.h" />
     <ClInclude Include="src\Enemy.h" />
     <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\PowerUp.h" />
     <ClInclude Include="src\Vector2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

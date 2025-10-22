@@ -1,5 +1,7 @@
 #include "Vector2D.h"
 
+//This whole class is used for math and calculations, will comment on what each individual function does in here later
+//Made by PK
 float Vector2D::CalculateMagnitude()
 {
 	float magnitudeSquared = x * x + y * y;
